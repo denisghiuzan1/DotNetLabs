@@ -82,19 +82,5 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HostWCF\HostWCF.csproj">
-      <Project>{725f9b9f-a818-46b9-91e9-f48adc334296}</Project>
-      <Name>HostWCF</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ObjectWCF\ObjectWCF.csproj">
-      <Project>{3b64ad0b-3383-440c-a16b-3d9f7f0ff239}</Project>
-      <Name>ObjectWCF</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\PostComment\PostComment.csproj">
-      <Project>{22BC6B38-ABFA-4A3C-805B-0333DC74EAA6}</Project>
-      <Name>PostComment</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
