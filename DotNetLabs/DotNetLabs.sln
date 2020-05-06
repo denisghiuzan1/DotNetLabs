@@ -39,7 +39,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Host", "Lab asp .net\Host\H
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Lab asp .net\Client\Client.csproj", "{C1A57BA2-1530-4965-B826-95A1102A2E9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientCore", "Lab asp .net\ClientCore\ClientCore.csproj", "{BABB2A50-168D-4853-A393-1D86518D3B41}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientCore", "Lab asp .net\ClientCore\ClientCore.csproj", "{BABB2A50-168D-4853-A393-1D86518D3B41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp_Ghiuzan_Denis_Rp", "Asp_Ghiuzan_Denis_Rp\Asp_Ghiuzan_Denis_Rp\Asp_Ghiuzan_Denis_Rp.csproj", "{404B2A00-6F5F-4C93-B9BF-86468F517DF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{BABB2A50-168D-4853-A393-1D86518D3B41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BABB2A50-168D-4853-A393-1D86518D3B41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BABB2A50-168D-4853-A393-1D86518D3B41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{404B2A00-6F5F-4C93-B9BF-86468F517DF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{404B2A00-6F5F-4C93-B9BF-86468F517DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{404B2A00-6F5F-4C93-B9BF-86468F517DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{404B2A00-6F5F-4C93-B9BF-86468F517DF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
