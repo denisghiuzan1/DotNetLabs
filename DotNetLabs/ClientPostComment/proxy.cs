@@ -8,188 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PostComment.API
-{
-    using System.Runtime.Serialization;
-    
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Post", Namespace="http://schemas.datacontract.org/2004/07/PostComment.API")]
-    public partial class Post : object, System.Runtime.Serialization.IExtensibleDataObject
-    {
-        
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private PostComment.API.Comment[] CommentsField;
-        
-        private string DateField;
-        
-        private string DescriptionField;
-        
-        private string DomainField;
-        
-        private int IdField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
-        {
-            get
-            {
-                return this.extensionDataField;
-            }
-            set
-            {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public PostComment.API.Comment[] Comments
-        {
-            get
-            {
-                return this.CommentsField;
-            }
-            set
-            {
-                this.CommentsField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Date
-        {
-            get
-            {
-                return this.DateField;
-            }
-            set
-            {
-                this.DateField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Description
-        {
-            get
-            {
-                return this.DescriptionField;
-            }
-            set
-            {
-                this.DescriptionField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Domain
-        {
-            get
-            {
-                return this.DomainField;
-            }
-            set
-            {
-                this.DomainField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id
-        {
-            get
-            {
-                return this.IdField;
-            }
-            set
-            {
-                this.IdField = value;
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Comment", Namespace="http://schemas.datacontract.org/2004/07/PostComment.API")]
-    public partial class Comment : object, System.Runtime.Serialization.IExtensibleDataObject
-    {
-        
-        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
-        
-        private int IdField;
-        
-        private PostComment.API.Post PostField;
-        
-        private int PostIdField;
-        
-        private string TextField;
-        
-        public System.Runtime.Serialization.ExtensionDataObject ExtensionData
-        {
-            get
-            {
-                return this.extensionDataField;
-            }
-            set
-            {
-                this.extensionDataField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int Id
-        {
-            get
-            {
-                return this.IdField;
-            }
-            set
-            {
-                this.IdField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public PostComment.API.Post Post
-        {
-            get
-            {
-                return this.PostField;
-            }
-            set
-            {
-                this.PostField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public int PostId
-        {
-            get
-            {
-                return this.PostIdField;
-            }
-            set
-            {
-                this.PostIdField = value;
-            }
-        }
-        
-        [System.Runtime.Serialization.DataMemberAttribute()]
-        public string Text
-        {
-            get
-            {
-                return this.TextField;
-            }
-            set
-            {
-                this.TextField = value;
-            }
-        }
-    }
-}
 namespace PostComment
 {
     using System.Runtime.Serialization;
@@ -380,16 +198,16 @@ public interface IPostComment
 {
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePost/AddPost", ReplyAction="http://tempuri.org/InterfacePost/AddPostResponse")]
-    bool AddPost(PostComment.API.Post post);
+    bool AddPost(PostComment.Post post);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePost/AddPost", ReplyAction="http://tempuri.org/InterfacePost/AddPostResponse")]
-    System.Threading.Tasks.Task<bool> AddPostAsync(PostComment.API.Post post);
+    System.Threading.Tasks.Task<bool> AddPostAsync(PostComment.Post post);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePost/UpdatePost", ReplyAction="http://tempuri.org/InterfacePost/UpdatePostResponse")]
-    PostComment.Post UpdatePost(PostComment.API.Post post);
+    PostComment.Post UpdatePost(PostComment.Post post);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePost/UpdatePost", ReplyAction="http://tempuri.org/InterfacePost/UpdatePostResponse")]
-    System.Threading.Tasks.Task<PostComment.Post> UpdatePostAsync(PostComment.API.Post post);
+    System.Threading.Tasks.Task<PostComment.Post> UpdatePostAsync(PostComment.Post post);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePost/DeletePost", ReplyAction="http://tempuri.org/InterfacePost/DeletePostResponse")]
     int DeletePost(int id);
@@ -410,16 +228,16 @@ public interface IPostComment
     System.Threading.Tasks.Task<PostComment.Post[]> GetPostsAsync();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceComment/AddComment", ReplyAction="http://tempuri.org/InterfaceComment/AddCommentResponse")]
-    bool AddComment(PostComment.API.Comment comment);
+    bool AddComment(PostComment.Comment comment);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceComment/AddComment", ReplyAction="http://tempuri.org/InterfaceComment/AddCommentResponse")]
-    System.Threading.Tasks.Task<bool> AddCommentAsync(PostComment.API.Comment comment);
+    System.Threading.Tasks.Task<bool> AddCommentAsync(PostComment.Comment comment);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceComment/UpdateComment", ReplyAction="http://tempuri.org/InterfaceComment/UpdateCommentResponse")]
-    PostComment.Comment UpdateComment(PostComment.API.Comment newComment);
+    PostComment.Comment UpdateComment(PostComment.Comment newComment);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceComment/UpdateComment", ReplyAction="http://tempuri.org/InterfaceComment/UpdateCommentResponse")]
-    System.Threading.Tasks.Task<PostComment.Comment> UpdateCommentAsync(PostComment.API.Comment newComment);
+    System.Threading.Tasks.Task<PostComment.Comment> UpdateCommentAsync(PostComment.Comment newComment);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceComment/GetCommentById", ReplyAction="http://tempuri.org/InterfaceComment/GetCommentByIdResponse")]
     PostComment.Comment GetCommentById(int id);
@@ -462,22 +280,22 @@ public partial class PostCommentClient : System.ServiceModel.ClientBase<IPostCom
     {
     }
     
-    public bool AddPost(PostComment.API.Post post)
+    public bool AddPost(PostComment.Post post)
     {
         return base.Channel.AddPost(post);
     }
     
-    public System.Threading.Tasks.Task<bool> AddPostAsync(PostComment.API.Post post)
+    public System.Threading.Tasks.Task<bool> AddPostAsync(PostComment.Post post)
     {
         return base.Channel.AddPostAsync(post);
     }
     
-    public PostComment.Post UpdatePost(PostComment.API.Post post)
+    public PostComment.Post UpdatePost(PostComment.Post post)
     {
         return base.Channel.UpdatePost(post);
     }
     
-    public System.Threading.Tasks.Task<PostComment.Post> UpdatePostAsync(PostComment.API.Post post)
+    public System.Threading.Tasks.Task<PostComment.Post> UpdatePostAsync(PostComment.Post post)
     {
         return base.Channel.UpdatePostAsync(post);
     }
@@ -512,22 +330,22 @@ public partial class PostCommentClient : System.ServiceModel.ClientBase<IPostCom
         return base.Channel.GetPostsAsync();
     }
     
-    public bool AddComment(PostComment.API.Comment comment)
+    public bool AddComment(PostComment.Comment comment)
     {
         return base.Channel.AddComment(comment);
     }
     
-    public System.Threading.Tasks.Task<bool> AddCommentAsync(PostComment.API.Comment comment)
+    public System.Threading.Tasks.Task<bool> AddCommentAsync(PostComment.Comment comment)
     {
         return base.Channel.AddCommentAsync(comment);
     }
     
-    public PostComment.Comment UpdateComment(PostComment.API.Comment newComment)
+    public PostComment.Comment UpdateComment(PostComment.Comment newComment)
     {
         return base.Channel.UpdateComment(newComment);
     }
     
-    public System.Threading.Tasks.Task<PostComment.Comment> UpdateCommentAsync(PostComment.API.Comment newComment)
+    public System.Threading.Tasks.Task<PostComment.Comment> UpdateCommentAsync(PostComment.Comment newComment)
     {
         return base.Channel.UpdateCommentAsync(newComment);
     }

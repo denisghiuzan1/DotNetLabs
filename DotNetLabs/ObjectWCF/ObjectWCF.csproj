@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="InterfaceWCF.cs" />
-    <Compile Include="PostComm.cs" />
+    <Compile Include="PostComment.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
