@@ -79,7 +79,7 @@ namespace PostComment
         {
             using (ModelPostCommentContainer ctx = new ModelPostCommentContainer())
             {
-                return ctx.Database.ExecuteSqlCommand("Delete From Post where postid = @p0", id);
+                return ctx.Database.ExecuteSqlCommand("Delete From Post where id = @p0", id);
             }
         }
         public Post GetPostById(int id)

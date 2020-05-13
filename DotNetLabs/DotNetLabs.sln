@@ -22,9 +22,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientPostComment", "ClientPostComment\ClientPostComment.csproj", "{BACA97D6-718D-42D0-90A8-11D8B14351D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab 6", "Lab 6", "{C878D389-DB34-4D37-90C4-58EEE0DFCBB0}"
-	ProjectSection(SolutionItems) = preProject
-		..\proxy.cs = ..\proxy.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab8", "Lab8", "{BED0DAC9-A535-4333-89DE-39BEA5FCF338}"
 EndProject
@@ -43,6 +40,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientCore", "Lab asp .net\ClientCore\ClientCore.csproj", "{BABB2A50-168D-4853-A393-1D86518D3B41}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp_Ghiuzan_Denis_Rp", "Asp_Ghiuzan_Denis_Rp\Asp_Ghiuzan_Denis_Rp\Asp_Ghiuzan_Denis_Rp.csproj", "{404B2A00-6F5F-4C93-B9BF-86468F517DF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PostCommentWebApplication", "PCWeb\PostCommentWebApplication\PostCommentWebApplication.csproj", "{5D7EF14C-EF2F-46DD-8F85-D4F8BF7E772E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -114,6 +113,10 @@ Global
 		{404B2A00-6F5F-4C93-B9BF-86468F517DF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{404B2A00-6F5F-4C93-B9BF-86468F517DF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{404B2A00-6F5F-4C93-B9BF-86468F517DF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D7EF14C-EF2F-46DD-8F85-D4F8BF7E772E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D7EF14C-EF2F-46DD-8F85-D4F8BF7E772E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D7EF14C-EF2F-46DD-8F85-D4F8BF7E772E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D7EF14C-EF2F-46DD-8F85-D4F8BF7E772E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -129,6 +132,7 @@ Global
 		{B871B3E6-E480-4B07-B6BB-E3FA0CB17ECD} = {FE4FBEF2-38F7-499D-97ED-E707225740FF}
 		{C1A57BA2-1530-4965-B826-95A1102A2E9D} = {FE4FBEF2-38F7-499D-97ED-E707225740FF}
 		{BABB2A50-168D-4853-A393-1D86518D3B41} = {FE4FBEF2-38F7-499D-97ED-E707225740FF}
+		{5D7EF14C-EF2F-46DD-8F85-D4F8BF7E772E} = {C878D389-DB34-4D37-90C4-58EEE0DFCBB0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {59B718F5-1340-4F55-BBD0-AE1C468A58E9}
